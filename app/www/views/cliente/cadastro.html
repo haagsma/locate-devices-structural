@@ -1,0 +1,44 @@
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+		  <div align="center">
+			  <form id="formAtualizaCadastroImg" enctype="multipart/form-data" method="post">
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+					  <div class="fileupload-new thumbnail img-circle img-perfil" >
+						  <img src="../../dist/img/user2-160x160.jpg" class="imgPerfilCadastro" alt="User Image" style="width: 160px; height: 160px">
+					  </div>
+					  <div class="fileupload-preview fileupload-exists thumbnail img-circle img-perfil" style="max-width: 200px" ></div>
+					  <div>
+						  <button type="button" class="btn btn-primary btn-file">
+							  <span class="fileupload-new"><i class="fa fa-paperclip"></i> Selecione a Imagem</span>
+							  <span class="fileupload-exists"><i class="fa fa-undo"></i> Alterar</span>
+							  <input type="file" id="fileToUpload" name="fileToUpload" class="btn-default">
+						  </button>
+					  </div>
+				  </div>
+				  <button type="button" id="enviarImgUser" class="btn-atualizar" style="width: 150px">Enviar</button>
+			  </form>
+			  <form id="formAtualizaCadastro" enctype="multipart/form-data" method="post">
+				  <input type="text" class="form-control" id="nomeCadastro" readonly>
+				  <input type="email" class="form-control" name="email" id="emailCadastro" readonly>
+				  <input type="text" class="form-control cnpj" placeholder="CNPJ" name="cnpj" id="cnpjCadastro" required>
+				  <input type="text" class="form-control" placeholder="Nome do Representante" name="representante" id="repreCadastro" maxlength="45" required>
+				  <input type="text" class="form-control" placeholder="Telefone" name="telefone" id="telefoneCadastro" maxlength="18" required>
+				  <input type="text" class="form-control" placeholder="Celular" name="celular" id="celCadastro" maxlength="20" required>
+				  <input type="text" class="form-control cepCadastro" placeholder="CEP" name="cep" id="cep" maxlength="9" required>
+				  <input type="text" class="form-control endCadastro" placeholder="Rua ou Avenida" name="rua" id="endereco" maxlength="100" required>
+				  <input type="text" class="form-control numCadastro" placeholder="Número da casa" maxlength="4" name="numero" required>
+				  <input type="text" class="form-control compCadastro" placeholder="Complemento" name="complemento">
+				  <input type="text" class="form-control baiCadastro" placeholder="Bairro" name="bairro" id="bairro" maxlength="255" required>
+				  <input type="text" class="form-control cidCadastro" placeholder="Cidade" name="cidade" id="cidade" maxlength="255" required>
+				  <input type="text" class="form-control estCadastro" placeholder="Siglas do Estado" maxlength="2" name="estado" id="estado" required>
+				  <input id="idCadastro" name="id" hidden>
+				  <input name="funcao" value="atualizarCadastroCliente" hidden>
+				  <button type="submit" id="atualizaCadastro" name="submit" class="btn-atualizar">Atualizar</button>
+			  </form>
+		  </div>
+      </div>
+	</section>
+

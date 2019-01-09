@@ -1,0 +1,10 @@
+body{
+    background-image: url("dist/img/main-background.jpg");
+    padding: 0;
+    margin: 0;
+}
+img {
+    display: none;
+    max-height: 100%;
+    max-width: 100%;
+}

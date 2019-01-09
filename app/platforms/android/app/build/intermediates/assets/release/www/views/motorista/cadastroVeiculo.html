@@ -1,0 +1,48 @@
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+		  <div align="center">
+			  <form id="formCadastroVeiculo" enctype="multipart/form-data" method="post">
+
+				  <input type="text" class="form-control text-uppercase" id="placaVeiculo" placeholder="*Digite a placa do veículo" name="placa_veiculo" data-mask="aaa9999" maxlength="7" required>
+				  <input type="text" class="form-control" id="renavam" placeholder="*Digite o renavam" name="renavam" maxlength="20" required>
+				  <input type="text" class="form-control" id="marcaVeiculo" placeholder="*Digite a marca do veículo" name="marca" maxlength="20" required>
+				  <input type="text" class="form-control" id="modeloVeiculo" placeholder="*Digite modelo do veículo" name="modelo" maxlength="20" required>
+				  <input type="text" class="form-control campoObV" id="anoFab" placeholder="*Digite ano de fabricação do veículo" name="ano_fab" data-mask="9999"  maxlength="4" required>
+				  <input type="text" class="form-control campoObV" id="anoMod" placeholder="*Digite ano do modelo do veículo" name="ano_model" data-mask="9999" maxlength="4" required>
+				  <select class="form-control campoObV" name="tipo_veiculo" >
+					  <option>--- Selecione ---</option>
+					  <option value="CARRETA BITREM">CARRETA BITREM</option>
+					  <option value="CARRETA LS">CARRETA LS</option>
+					  <option value="CARRETA ROTREM">CARRETA ROTREM</option>
+					  <option value="CARRETA TRUCK">CARRETA TRUCK</option>
+					  <option value="TOCO">TOCO</option>
+					  <option value="TRUCK">TRUCK</option>
+				  </select>
+				  <input type="text" class="form-control text-uppercase" id="placaCarreta" placeholder="*Digite a placa da carreta do veículo" name="placa_carreta" maxlength="7" data-mask="aaa9999" >
+				  <select class="form-control campoObV" name="rastreador" >
+					  <option>--- Selecione ---</option>
+					  <option value="SEM RASTREADOR" >SEM RASTREADOR</option>
+					  <option value="AUTOTRAC" >AUTOTRAC</option>
+					  <option value="AUTOTRAC AUTO CELULAR" >AUTOTRAC AUTO CELULAR</option>
+					  <option value="AUTOTRAC PRIME" >AUTOTRAC PRIME</option>
+					  <option value="AUTOTRAC UCV" >AUTOTRAC UCV</option>
+					  <option value="JABURSAT II" >JABURSAT II</option>
+					  <option value="JABURSAT III" >JABURSAT III</option>
+					  <option value="JABURSAT SKY" >JABURSAT SKY</option>
+					  <option value="OMNILINK" >OMNILINK</option>
+					  <option value="OMNILINK TURBO HÍBRIDO" >OMNILINK TURBO HÍBRIDO</option>
+					  <option value="ONIXSAT" >ONIXSAT</option>
+					  <option value="RONDON GR" >RONDON GR</option>
+				  </select>
+				  <input type="hidden" class="emailCadastro" name="proprietario" >
+				  <input type="hidden" name="funcao" value="cadastroVeiculo">
+				  <button type="submit" id="cadastroVeiculo" name="submit" class="btn-atualizar">Cadastrar</button>
+				  <button type="button" id="removerVeiculo" name="submit" class="btn-atualizar">Remover</button>
+			  </form>
+		  </div>
+      </div>
+	</section>
+

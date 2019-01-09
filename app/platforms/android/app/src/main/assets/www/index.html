@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>99 Cargas</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+<img src="dist/img/main-screen.jpg">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script>
+    document.addEventListener('deviceready', function () {
+        // cordova.plugins.backgroundMode is now available
+        cordova.plugins.backgroundMode.enable();
+    }, false);
+</script>
+    <script src="redirect.js"></script>
+
+
+</body>
+</html>

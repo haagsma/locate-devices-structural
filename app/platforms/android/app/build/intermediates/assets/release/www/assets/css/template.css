@@ -1,0 +1,49 @@
+html{
+    background-image: url("../../dist/img/main-background.jpg");
+    padding: 0;
+    margin: 0;
+}
+.esconde {
+    display: none;
+}
+.pagina-ativa {
+    display: block;
+}
+.mdi-highway {
+    min-width: 40px;
+    min-height: 40px;
+}
+.form-group input {
+    border-radius: 10px;
+}
+.shell {
+    position: relative;
+    line-height: 1; }
+.shell span {
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    color: #ccc;
+    pointer-events: none;
+    z-index: -1; }
+.shell span i {
+    font-style: normal;
+    /* any of these 3 will work */
+    color: transparent;
+    opacity: 0;
+    visibility: hidden; }
+
+input.masked,
+.shell span {
+    font-size: 16px;
+    font-family: monospace;
+    padding-right: 10px;
+    background-color: transparent;
+}
+#esqueciSenha{
+
+    font-size: 16px;
+    max-width: 200px;
+    max-height: 50px;
+    border-radius: 10px;
+}
