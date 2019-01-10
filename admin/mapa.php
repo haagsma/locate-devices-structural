@@ -65,7 +65,7 @@ $placas = $conn->query("SELECT * FROM tbl_cadastro_veiculo");
 
 
     <!-- ============================================================== -->
-    <!-- Start right Content here -->
+    <!-- Start right Content here  -->
     <!-- ============================================================== -->
     <div class="content-page">
         <!-- Start content -->
